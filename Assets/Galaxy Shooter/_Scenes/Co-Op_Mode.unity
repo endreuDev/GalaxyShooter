@@ -1128,8 +1128,8 @@ MonoBehaviour:
   isCoopMode: 1
   gameOver: 1
   player: {fileID: 6246742322303391086, guid: f1125d0fa94890a4ca8ec2e17fb81871, type: 3}
-  player1: {fileID: 4841669779475038245, guid: fb4082a20c79ff24191a8e585416839a, type: 3}
-  player2: {fileID: 3756160005159464679, guid: 78570ebf37397ee4fa7d44c23fe0cf16, type: 3}
+  playerOne: {fileID: 4267320117145673364, guid: f2bc45040fce52d4680c56b78503ea98, type: 3}
+  playerTwo: {fileID: 5226238600192994042, guid: 83248d88e6447d74fafa917a4b890f1c, type: 3}
 --- !u!4 &2066462523
 Transform:
   m_ObjectHideFlags: 0

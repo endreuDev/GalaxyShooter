@@ -27,10 +27,12 @@ public class GameManager : MonoBehaviour
             {
                 if(isCoopMode == false)
                 {
+                    Debug.Log("Single player game starting...");
                     Instantiate(player, Vector3.zero, Quaternion.identity);
                 }
                 else
                 {
+                    Debug.Log("Co-Op game starting...");
                     Instantiate(playerOne, new Vector3(-3, 0), Quaternion.identity);
                     Instantiate(playerTwo, new Vector3(3, 0), Quaternion.identity);
                 }
