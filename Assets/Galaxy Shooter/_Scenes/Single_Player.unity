@@ -1059,8 +1059,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SendPointerHoverToParent: 1
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
+  m_HorizontalAxis: HorizontalP1
+  m_VerticalAxis: VerticalP1
   m_SubmitButton: Submit
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
@@ -1125,8 +1125,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfa6bf068d1349341ac10416343a5428, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCoopMode: 0
   gameOver: 1
   player: {fileID: 6246742322303391086, guid: f1125d0fa94890a4ca8ec2e17fb81871, type: 3}
+  playerOne: {fileID: 0}
+  playerTwo: {fileID: 0}
 --- !u!4 &2066462523
 Transform:
   m_ObjectHideFlags: 0

@@ -87,7 +87,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!95 &348076536693173400
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -104,7 +104,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6246742322303391086
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,11 +117,11 @@ GameObject:
   - component: {fileID: 6246742322303391084}
   - component: {fileID: 6246742322303391087}
   - component: {fileID: 6246742322303391085}
+  - component: {fileID: 85724679}
   - component: {fileID: 6246742322303391083}
   - component: {fileID: 6246742322303391082}
   - component: {fileID: 3130184943302638178}
   - component: {fileID: 85724680}
-  - component: {fileID: 85724679}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -214,18 +215,31 @@ MonoBehaviour:
   canTripleShot: 0
   canSpeedBoost: 0
   hasShieldActive: 0
+  isPlayerOne: 1
+  isPlayerTwo: 0
+  lives: 3
   _laserPrefab: {fileID: 6071597522298129266, guid: 9a85095d5ece17e4a8859aa5e37b5ba2, type: 3}
   _tripleShotPrefab: {fileID: 7298920160238489137, guid: a5fb40f1c2b02ae4fb9eeac14fb78eb7, type: 3}
   _fireRate: 0.25
   _speed: 5
-  lives: 3
   _engines:
   - {fileID: 8843058884095035865}
   - {fileID: 2735807311404287702}
   _explosion: {fileID: 4350134203835854861, guid: b97153ed38e2b1e47a0c82a716e65fb0, type: 3}
   _shield: {fileID: 6246742322951868855}
-  isPlayerOne: 1
-  isPlayerTwo: 0
+--- !u!114 &85724679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6246742322303391086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22d576bad9e0a7d4d893cb74a421ad95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player: {fileID: 6246742322303391085}
 --- !u!61 &6246742322303391083
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -371,7 +385,7 @@ AudioSource:
     m_RotationOrder: 4
 --- !u!95 &85724680
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -388,19 +402,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &85724679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6246742322303391086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22d576bad9e0a7d4d893cb74a421ad95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6246742322951868855
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,7 +491,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!95 &6246742322951868850
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -505,7 +508,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8843058884095035865
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,7 +597,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!95 &8107549151765526223
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -610,7 +614,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &6351008930408748397
 PrefabInstance:
   m_ObjectHideFlags: 0

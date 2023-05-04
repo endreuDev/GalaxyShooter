@@ -117,11 +117,11 @@ GameObject:
   - component: {fileID: 5226238600192994040}
   - component: {fileID: 5226238600192994043}
   - component: {fileID: 5226238600192994041}
+  - component: {fileID: 2177410544358060435}
   - component: {fileID: 5226238600192994047}
   - component: {fileID: 5226238600192994046}
   - component: {fileID: 3839056747669915126}
   - component: {fileID: 2177410544358060444}
-  - component: {fileID: 2177410544358060435}
   m_Layer: 0
   m_Name: Player_2
   m_TagString: Player
@@ -188,7 +188,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -950487999
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 1b4a8fdd39d3a45d0a9ee484ad6800ec, type: 3}
   m_Color: {r: 1, g: 0.19607843, b: 0.09803922, a: 1}
   m_FlipX: 0
@@ -215,18 +215,31 @@ MonoBehaviour:
   canTripleShot: 0
   canSpeedBoost: 0
   hasShieldActive: 0
+  isPlayerOne: 0
+  isPlayerTwo: 1
+  lives: 3
   _laserPrefab: {fileID: 6071597522298129266, guid: 9a85095d5ece17e4a8859aa5e37b5ba2, type: 3}
   _tripleShotPrefab: {fileID: 7298920160238489137, guid: a5fb40f1c2b02ae4fb9eeac14fb78eb7, type: 3}
   _fireRate: 0.25
   _speed: 5
-  lives: 3
   _engines:
   - {fileID: 7246129525130671693}
   - {fileID: 4305508432985831746}
   _explosion: {fileID: 4350134203835854861, guid: b97153ed38e2b1e47a0c82a716e65fb0, type: 3}
   _shield: {fileID: 5226238600618389027}
-  isPlayerOne: 0
-  isPlayerTwo: 1
+--- !u!114 &2177410544358060435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5226238600192994042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22d576bad9e0a7d4d893cb74a421ad95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player: {fileID: 5226238600192994041}
 --- !u!61 &5226238600192994047
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -391,18 +404,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2177410544358060435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5226238600192994042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22d576bad9e0a7d4d893cb74a421ad95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5226238600618389027
 GameObject:
   m_ObjectHideFlags: 0
